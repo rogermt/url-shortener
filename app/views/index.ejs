@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+
+    <!-- CSS -->
+    <!-- load bootstrap and our own personal stylesheet -->
+    <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/superhero/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1><%= title %></h1>
+        <h4>Example Usage:</h4>
+        <p><code><a href="<%= url1  %>"><%= url1  %></a></code></p>
+        <p><code><a href="<%= url2  %>"><%= url2  %></a></code></p>
+        <h4>Example creation output:</h4>
+        <code><%= output  %> </code>
+        <h4>Usage:</h4>
+        <p><code><%= usage  %> </code></p>
+        <h4>Will redirect to:</h4>
+        <code><%= redirect  %> </code>
+    </div>
+</div>
+    
+</body>
+</html>
+
