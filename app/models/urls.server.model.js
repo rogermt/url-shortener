@@ -2,7 +2,7 @@ var mongoose = require('mongoose'),
     autoIncrement = require('mongoose-auto-increment'),
     Schema = mongoose.Schema;
 
-autoIncrement.initialize(mongoose)
+
 
 var UrlSchema = new Schema({
     originalUrl: {
@@ -28,10 +28,12 @@ var UrlSchema = new Schema({
 
 mongoose.model('Url', UrlSchema);
 
+autoIncrement.initialize(mongoose)
 UrlSchema.plugin(autoIncrement.plugin, {
     model: 'Url',
     field: 'shortUrlNum'
 });
+
 
 UrlSchema.pre('save', function(next) {
     //Convert shortUrlNum to alphabetic 4 chars long

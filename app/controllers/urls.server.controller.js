@@ -31,7 +31,7 @@ exports.create = function(req, res, next) {
         var getshortUrl = function(url) {
             return {
                 original_url: url.originalUrl,
-                short_url: (req.get('X-Forwarded-Protocol') || req.protocol) + '://' + req.get('host') + '/' + url.shortUrl
+                short_url: (req.get('X-Forwarded-Proto') || req.protocol) + '://' + req.get('host') + '/' + url.shortUrl
             }
         }
 
