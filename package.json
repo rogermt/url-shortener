@@ -1,6 +1,6 @@
 {
   "name": "urlshortener",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Objective: Build a full stack JavaScript app that is functionally  similar to this: https://little-url.herokuapp.com/ and deploy it to Heroku.",
   "main": "server.js",
   "scripts": {
@@ -22,7 +22,7 @@
     "method-override": "~2.2.0",
     "express-session": "~1.7.6",
     "ejs": "~1.0.0",
-    "mongoose": "4.1.12",
+    "mongoose": "4.5.8",
     "mongoose-auto-increment": "5.0.1"
   },
   "bugs": {
